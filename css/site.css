@@ -1,0 +1,151 @@
+/**
+ *
+ */
+.headline {
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #80CF5C),
+        color-stop(1, #4F7F39)
+    );
+    background-image: -o-linear-gradient(bottom, #80CF5C 0%, #4F7F39 100%);
+    background-image: -moz-linear-gradient(bottom, #80CF5C 0%, #4F7F39 100%);
+    background-image: -webkit-linear-gradient(bottom, #80CF5C 0%, #4F7F39 100%);
+    background-image: -ms-linear-gradient(bottom, #80CF5C 0%, #4F7F39 100%);
+    background-image: linear-gradient(to bottom, #80CF5C 0%, #4F7F39 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80CF5C', endColorstr='#4F7F39'); /* for IE */
+       -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80CF5C', endColorstr='#4F7F39'); /* for IE */
+
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.headline a {
+    color: #fff;
+    text-shadow: 2px 3px 2px rgba(0,0,0,0.5)
+}
+.headline a:hover {
+    text-decoration: none;
+}
+.headline .tagline {
+    font-weight: normal;
+}
+.headline .description {
+    margin-bottom: 10px;
+}
+
+.content {
+    padding-top: 50px;
+}
+.content a {
+    color: #4F7F39;
+    font-weight: bold;
+}
+.content .img {
+    text-align: center;
+}
+
+.feature {
+    margin: 0 auto 50px auto;
+    float: none;
+    font-size: 18px;
+}
+
+.footer-wrapper {
+    background: #279AD8;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.footer {
+    overflow: hidden;
+}
+.footer,
+.footer a {
+    color: #ffffff;
+}
+.footer-list,
+.social-links {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 0;
+}
+.footer-list {
+    text-align: center;
+    width: 100%;
+}
+.footer-list .item,
+.footer-list .social-item {
+    display: inline-block;
+}
+.footer-list .item {
+    border-right: 1px solid;
+    margin-right: 7px;
+    padding-right: 10px;
+}
+.footer-list .item:last-child {
+    border-right: none;
+    padding-right: 0;
+}
+
+.footer-list .item:last-child,
+.footer-list .social-item:last-child {
+    margin-right: 0;
+}
+.social-links {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    top: 2px;
+}
+.social-item {
+    font-size: 0;
+}
+.social-item a {
+    display: block;
+    font-size: 20px;
+    width: 28px;
+}
+.social-item a:hover {
+    border-radius: 50%;
+    background-color: #fff;
+    color: #279AD8;
+    text-decoration: none;
+}
+
+/*
+ * Mobile Overrides
+ */
+@media (max-width: 768px) {
+    .headline {
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .headline .description {
+        padding: 0 10px
+    }
+
+    .content {
+        padding-top: 15px;
+    }
+
+    .feature,
+    .feature .description {
+        margin-bottom: 20px;
+    }
+
+    .footer-list .item {
+        display: list-item;
+    }
+    .footer-list .item {
+        border-right: none;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .footer-list .item:last-child {
+        margin-bottom: 0;
+    }
+    .social-links {
+        left: -5px;
+    }
+}

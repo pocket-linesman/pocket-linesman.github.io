@@ -1,0 +1,16 @@
+<title>{{site.title}} | {{page.title}}</title>
+<meta name="robots" content="{{page.index}}INDEX,{{page.follow}}FOLLOW" />
+
+{% if page.description %}
+<meta name="description" content="{{page.description}}" />
+{% else %}
+<meta name="description" content="{{ page.excerpt | strip_html }}" />
+{% endif %}
+
+{% if page.date %}
+<meta http-equiv="date" content="{{page.date |date: '%A, %d  %Y %H:%M:%S GMT'}}" />
+{% endif %}
+
+{% if page.author_url %}
+<link rel="author" href="{{page.author_url}}">
+{% endif %}

@@ -1,0 +1,35 @@
+---
+layout: blog
+---
+{% capture postURI %}{{ site.url }}{{ page.url }}{% endcapture %}
+
+<article>
+    <header class="post-header">
+        <h2>
+            {{page.title}}
+        </h2>
+
+        <div class="metadata">
+            <div class="pubdate">
+                {{ page.date | date: "%b %-d %Y" }}
+            </div>
+            <ul class="share-list list-unstyled list-inline">
+                <li class="share-link">
+                    <a href="https://twitter.com/intent/tweet?text={{page.title}};%20via%20@pocketlinesman:%20&related=pocketlinesman&url={{ postURI | uri_escape }}" target="_blank">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="share-link">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u={{ postURI | cgi_escape }}" target="_blank">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                </li>
+                <li class="share-link">
+                    <a href="https://plus.google.com/share?url={{ postURI | cgi_escape }}" onclick="javascript:window.open(this.href,
+                      '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><i class="fa fa-google-plus"></i></a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    {{content}}
+</article>

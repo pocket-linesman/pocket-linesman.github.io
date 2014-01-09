@@ -1,0 +1,107 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    position: relative;
+}
+
+.header {
+    margin-bottom: 60px;
+    margin-top: 30px;
+}
+.header a {
+    font-weight: normal;
+    color: #333;
+}
+.header a:hover {
+    color: #4F7F39;
+    text-decoration: none;
+}
+
+.content {
+    margin-bottom: 60px;
+    padding-top: 0;
+}
+
+.posts a {
+    color: #4F7F39;
+}
+
+.post .date {
+    font-size: 24px;
+    color: #333;
+    font-weight: normal;
+}
+.post .title {
+    margin-top: 3px;
+}
+
+.post-header {
+    margin-bottom: 1em;
+}
+.post-header h2 {
+    margin: 0;
+}
+
+.metadata {
+    color: #999;
+    font-size: 18px;
+}
+.metadata .pubdate {
+    display: inline-block;
+    margin-right: 10px;
+}
+.metadata .share-list {
+    display: inline;
+}
+.metadata .share-link {
+    padding: 0;
+}
+.metadata .share-link a {
+    color: #999;
+    width: 28px;
+    display: block;
+    text-align: center;
+
+}
+
+.share-link a:hover {
+    background-color: #4F7F39;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.footer-col-wrapper {
+    padding-left: 0;
+}
+.footer {
+    background: #fff;
+    color: #999;
+    padding-bottom: 10px;
+}
+.footer a {
+    color: #999;
+}
+.footer a:hover {
+    color: #4F7F39;
+    text-decoration: none;
+}
+.footer .footer-list .highlight,
+.footer .footer-list .highlight a {
+    color: #4F7F39;
+    font-weight: bold;
+}
+.footer .footer-list {
+    text-align: left;
+}
+.footer .footer-list .item {
+    border-right: 1px solid #999;
+}
+.footer .footer-list .item:last-child {
+    border-right: none;
+}
+.footer .social-item a:hover {
+    background-color: #4F7F39;
+    color: #fff;
+}
