@@ -11,6 +11,10 @@
 <meta http-equiv="date" content="{{page.date |date: '%A, %d  %Y %H:%M:%S GMT'}}" />
 {% endif %}
 
-{% if page.author_url %}
-<link rel="author" href="{{page.author_url}}">
+{% if page.author_gplus %}
+<link rel="author" href="{{page.author_gplus}}">
+{% endif %}
+
+{% if page.publisher_gplus %}
+<link rel="publisher" href="{{page.publisher_gplus}}">
 {% endif %}

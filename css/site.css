@@ -77,6 +77,9 @@
 .footer-list .social-item {
     display: inline-block;
 }
+.footer-list .social-item {
+    height: 30px;
+}
 .footer-list .item {
     border-right: 1px solid;
     margin-right: 7px;
