@@ -1,0 +1,15 @@
+---
+layout: post
+title: 'Pocket Linesman 1.0.1 - Release Notes'
+date: 2014-02-01 08:00
+author_gplus: https://plus.google.com/+JohnRyding
+---
+
+- New Voice Notes will not be created if a recording was never started.
+- You can now record Voice Notes in the background when you switch apps.
+- If Pocket Linesman's process is terminated while recording a new voice note, everything recorded up to the point of termination will be saved.
+- Fixed bug that crashed the app when trying to save notes in an existing match.
+- The app will now properly request for microphone access in iOS 7 when trying to create a voice note. If microphone access is denied, an alert will be displayed and the user will exit the new voice note screen.
+- Added a button to the settings screen to link users to the app store page for reviews.
+
+Many thanks to the talented Bobby Lesley for reporting bugs.
