@@ -23,6 +23,10 @@ body {
     margin-bottom: 60px;
     padding-top: 0;
 }
+.content img {
+    margin: 0 auto;
+    display: block;
+}
 
 .posts a {
     color: #4F7F39;
@@ -65,7 +69,6 @@ body {
     text-align: center;
 
 }
-
 .share-link a:hover {
     background-color: #4F7F39;
     border-radius: 50%;
